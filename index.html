@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style @import url(<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    :root{
+      --first-color: hsl(29,80%,58%);
+      --first-color-light: hsl(29,8o%,70%);
+      --black-color: hsl(29,16%,10%);
+      --text-color: hsl(29,8%,5%);
+      --body-color:hsl(29,100%,99%);
+      --body-font: 'poppins',sans-serif;
+      --h3-font-size:1.125rem;
+      --smaler-font-size:75rem;
+    }
+    
+    img {
+
+      height: 100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background-color: var(--body-color);
+    }
+
+    a {
+      text-decoration: none;
+
+    }
+
+    ul {
+      max-width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    .container {
+      height: 100vh;
+      margin-inline: 1.5rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      position: relative;
+      height: 256px;
+      background-color: var(--black-color);
+      padding: 1.25rem 2rem 3rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      box-shadow: 0.4px 16px hsl(29,75%,8%,2);    
+    }
+
+    .card__border {
+      width: 110px;
+      height: 110px;
+      border: 2px solid black;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 outo .75rem;
+    }
+
+    .card__name {
+      color: black;
+      font-size: var(--h3-font-size);
+      font-weight: 500;
+    }
+
+    .card__profession {
+      color: var(--text-color);
+      font-size: var(--smaller-font-size);
+      font-weight: 500;
+    }
+
+    .card__social {
+    
+      background-color: olive;
+    border-radius: 3px;
+
+      text-align: initial;
+      box-shadow: ;
+      position: absolute;
+    
+
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card__border">
+        <img src="/IMG_20221112_214457_954 (2).jpg" alt="card image" class="card__img">
+      </div>
+      <h3 class="card__name">lucky patel</h3>
+      <span class="card__profession">indian designer</span>
+      <div class="card__social" id="card-social">
+        <div class="card__social-control">
+          <!--toggle button-->
+          <div class="card__social-toggle" id="card-toggle">
+
+          </div>
+          <span class="card__social-text">my social networks</span>
+          <ul class="card__social-list">
+            <a href="https://www.facebook.com/" target="blank" class="card__social-linl"><i
+                class="fa fa-facebook-square" style="font-size:30px;color:rgb(47, 0, 255)"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="blank" class="card__social-linl"><i
+                class="fa fa-linkedin-square" style="font-size:30px;color: blue"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="blank" class="card__social-linl"><i class="fa fa-instagram"
+                style="font-size:30px;color: purple"></i>
+            </a>
+            <a href="https://www.whatsapp.com/" target="blank" class="card__social-linl"><i class="fa fa-whatsapp"
+                style="font-size:30px;color:green"></i>
+              <br></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
